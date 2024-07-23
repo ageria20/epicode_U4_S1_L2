@@ -1,18 +1,24 @@
 package Esercizio3;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class es3 {
 
-//    public static String insertString(String str) {
-//
-//        int i = 0;
-//        String[] arrSplit = str;
-//        while (i < arrSplit.length) {
-//            if (str != ":q") break;
-//            System.out.println(arrSplit[i]);
-//            i++;
-//
-//        }
-//
-//        return Arrays.toString(arrSplit.split(","));
-//    }
+    public static void main(String[] args) {
+
+
+        while (true) {
+            System.out.println("Inserisci una stringa");
+            Scanner scanner = new Scanner(System.in);
+            String str = scanner.nextLine();
+            if (str.equals(":q")) break;
+            char[] arrChars = str.toCharArray();
+
+            System.out.println(Arrays.toString(arrChars));
+        }
+
+    }
+
+
 }
